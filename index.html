@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header>
+          <h1 id="title" class="text-align">Todos</h1>
+        </header>
+        <main>
+          <div id="todos">
+            <ul id="todoList"></ul>
+            <div class="flex flex-around selected todo">
+              <span id="tasks-left">0 tasks left</span>
+              <span class="filterItem" onclick="filter('all')">all</span>
+              <span class="filterItem" onclick="filter('active')">active</span>
+              <span class="filterItem" onclick="filter('completed')"
+                >completed</span
+              >
+            </div>
+          </div>
+        </main>
+        <footer>
+          <form action="" class="flex flex-between">
+            <input type="text" id="todoInput" />
+            <input type="button" onclick="addToTodoList()" value="+" />
+          </form>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

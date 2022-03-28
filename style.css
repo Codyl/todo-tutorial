@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.box {
+  width: 50%;
+}
+.todo {
+  width: 100%;
+  height: 20px;
+}
+.todo:nth-child(even) {
+  background-color: gray;
+}
+.todo:nth-child(odd) {
+  background-color: lightgray;
+}
+.selected,
+.box {
+  border: 1px solid black;
+}
+.completed {
+  text-decoration: line-through;
+}
+.flex {
+  display: flex;
+}
+.flex-around {
+  justify-content: space-around;
+}
+.flex-between {
+  justify-content: space-between;
+}
+#title {
+  font-size: 2rem;
+}
+.text-align {
+  text-align: center;
+}
+#todoList {
+  padding: 0;
+}
+form {
+  margin-top: 20px;
+}
+#todoInput {
+  width: 100%;
+}
+.filterItem {
+  cursor: pointer;
+}
+.delete-btn {
+  background-color: red;
+}
